@@ -63,7 +63,7 @@ function App() {
     const stars = [];
     async function queryGaiaApi(raa, deca, radiusa) {
       console.log("Querying GAIA API with ra:", raa, "dec:", deca, "radius:", radiusa);
-      const response = await fetch("http://localhost:3000/proxy/gaia", {
+      const response = await fetch("https://backendnasa.vercel.app/proxy/gaia", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
